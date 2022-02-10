@@ -10,6 +10,8 @@ html {
 a {
     text-decoration: none;
     display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 ul, li {
@@ -26,10 +28,47 @@ body {
     color: #333;
 }
 
-.header{
+.header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    color:
+}
+
+.header__top {
+    min-height: 80px;
+    padding: 15px 0;
+    border-bottom: 1px solid #d29c3071;
+    position: relative;
+    z-index: 5;
+}
+
+.header__container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.logo img {
+    width: 150px;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-item + .header__menu-item {
+    margin-left: 15px;
+}
+
+.header__menu-link {
+    font-size: 20px;
+    font-weight: 600;
 }
