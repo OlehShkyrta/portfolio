@@ -123,3 +123,22 @@ body {
 .header__menu-link:focus::after {
     width: 100%;
 }
+
+.header__content {
+    margin-top: 50px;
+    /* position: relative; */
+}
+
+.header__content-inner {
+    /* position: relative; */
+}
+
+.header__text {
+    position: absolute;
+}
+
+.header__content-inner img {
+    max-width: 800px;
+    text-align: center;
+    
+}
