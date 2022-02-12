@@ -125,7 +125,18 @@ body {
 }
 
 .header__content {
-    margin-top: 50px;
+    margin-top: 150px;
+}
+
+.header__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content-photo img {
+    max-width: 350px;
+    border-radius: 50px;
+    border: 5px solid #ffb400;
 }
 
 .header__text {
@@ -135,14 +146,14 @@ body {
 }
 
 .header__welcome {
-    font-size: 16px;
+    font-size: 26px;
     text-transform: uppercase;
 }
 
 .header__presentation {
-    font-size: 32px;
+    font-size: 52px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 72px;
     text-transform: uppercase;
 }
 
@@ -152,7 +163,55 @@ body {
 }
 
 .header__descr {
+    margin-top: 25px;
     max-width: 650px;
     font-size: 18px;
+    line-height: 32px;
 }
 
+.header__btns {
+    margin-top: 30px;
+}
+
+
+.header__btn-about{ 
+    margin-right: 38px;
+}
+
+.header__btn-about,
+.header__btn-portfolio {
+    padding: 20px 30px 20px 60px;
+    border: 1px solid #ffb400;
+    cursor: pointer;
+    background-color: transparent;  
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 34px;
+    transition: .3s all;
+    font-weight: 600;
+    position: relative;
+}
+
+
+.header__btn-about:hover,
+.header__btn-portfolio:hover {
+    background-color: #ffb400;
+}
+
+.header__btn-about::before{
+    content: "\f007";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    font-size: 24px;
+}
+
+.header__btn-portfolio::before {
+    content: "\f003";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    font-size: 24px;
+}
