@@ -331,8 +331,8 @@ body {
 .about__info-inner {
     margin-top: 100px;
     display: flex;
-    border-bottom: 1px solid #4b4b4b;
-    padding-bottom: 80px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 100px;
 }
 
 .about__photo {
@@ -413,3 +413,79 @@ body {
     font-size: 24px;
 }
 
+.about__info-more {
+    margin-top: 50px;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+}
+
+.about__experience {
+    max-width: 500px;
+    padding-left: 30px;
+    /* position: relative; */
+}
+
+.about__experiance-wrapper,
+.about__education-wrapper {
+    border-left: 1px solid #c99037;
+    padding-left: 30px;
+}
+
+.about__education {
+    max-width: 500px;
+    margin-left: 100px;
+}
+
+.about__experience-title, 
+.about__education-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.experiance-date, 
+.education-date {
+    padding-left: 30px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #8d8d8d;
+}
+
+.experiance-date::before,
+.education-date::before {
+    content: "\f073";
+    font-family: "icomoon";
+    position: absolute;
+    left: 0;
+}
+
+.experiance-date::after, 
+.education-date::after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c99037;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.experience__title, 
+.education__title {
+    text-transform: uppercase;
+}
+
+.experience__title span, 
+.education__title span {
+    font-weight: 600;
+}
+
+.experiance__descr, 
+.education__descr {
+    margin-top: 10px;
+}
