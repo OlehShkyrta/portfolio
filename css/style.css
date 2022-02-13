@@ -420,6 +420,10 @@ body {
     display: flex;
 }
 
+.about__info-more + .about__info-more {
+    margin-left: 30px;
+}
+
 .about__experience {
     max-width: 500px;
     padding-left: 30px;
@@ -635,11 +639,11 @@ body {
 }
 
 .js-bar {
-    width: 32%;
+    width: 30%;
 }
 
 .js-perc {
     position: relative;
-    left: 24%;
+    left: 22%;
     bottom: 43px;
 }
