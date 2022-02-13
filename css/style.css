@@ -493,9 +493,70 @@ body {
 
 .about__skills-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.about__skills-item + .about__skills-item {
+    margin-left: 70px;
+}
 
+.skill {
+    width: 300px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    position: relative;
+}
 
+.progress {
+    width: 300px;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 15px;
+    
+}
 
+.bar {
+    width: 300px;
+    height: 1px;
+    background-color: #c99037;
+    margin-top: 15px;
+    position: absolute;
+    top: 30px;
+    
+}
+
+.windows-bar {
+    width: 72%;
+}
+
+.bubl-figure {
+    width: 46px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #c99037;
+    border-radius: 5px;
+    position: relative;
+    left: 64%;
+    bottom: 43px;
+}
+
+.bubl-figure::before {
+    content: "";
+    left: 35px;
+    top: 13px;
+    border: 1px solid #c99037;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: translateY(33.5px) rotate(45deg) skew(3deg, 3deg) translateX(-27px);
+    background-color: #FFF;
+    bottom: 8px;
+    position: absolute;
+}
+
+.bubl-figure span {
+    display: block;
+    text-align: center;
+    color: #c99037;
+}
