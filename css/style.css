@@ -438,7 +438,8 @@ body {
 }
 
 .about__experience-title, 
-.about__education-title {
+.about__education-title,
+.about__skills-title {
     font-size: 22px;
     font-weight: 600;
     line-height: 48px;
@@ -489,3 +490,12 @@ body {
 .education__descr {
     margin-top: 10px;
 }
+
+.about__skills-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
