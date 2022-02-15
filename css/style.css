@@ -290,8 +290,9 @@ body {
     color: #4b4b4b;
 }
 
-.about__title {
-    margin-top: 70px;
+.about__title, 
+.contact__title {
+    margin-top: 100px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-size: 72px;
@@ -299,18 +300,21 @@ body {
     line-height: 96px;
 }
 
-.about__title span {
+.about__title span,
+.contact__title span {
     color: #d29b30;
 }
 
-.about__quote {
+.about__quote,
+.contact__quote {
     text-transform: uppercase;
     font-size: 18px;
     display: inline-block;
     position: relative;
 }
 
-.about__quote::before {
+.about__quote::before,
+.contact__quote::before {
     content: "";
     position: absolute;
     top: 15px;
@@ -319,7 +323,8 @@ body {
     width: 35px;
 }
 
-.about__quote::after {
+.about__quote::after,
+.contact__quote::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -646,4 +651,81 @@ body {
     position: relative;
     left: 22%;
     bottom: 43px;
+}
+
+.contact {
+    margin-top: 70px;
+}
+.contact__inner {
+    text-align: center;
+}
+
+.contact__title {
+    text-align: center;
+    color:#4b4b4b
+}
+
+.contact__info {
+    text-align: left;
+    margin-top: 100px;
+    display: flex;
+}
+
+.contact__item {
+    margin-top: 25px;
+    font-size: 16px;
+
+}
+
+.contact__social a {
+    color: #333;
+    display: block;
+    font-size: 16px;
+    line-height: 36px;
+    text-transform: lowercase;
+    padding-left: 25px;
+    position: relative;
+}
+
+.phone a::before,
+.email a::before,
+.facebook a::before, 
+.linkedin a::before {
+    font-family: "icomoon";
+    position: absolute;
+    left: 0;
+}
+
+.phone a::before {
+    content: "\f095";
+}
+
+.email a::before {
+    content: "\f0e0";
+}
+
+.facebook a::before {
+    content: "\f082";
+}
+
+.linkedin a::before {
+    content: "\f08c";
+}
+
+.contact__form {
+    margin-left: 200px;
+}
+
+.contact__input {
+    width: 100%;
+}
+
+.input-name,
+.input-email {
+    display: inline-block;
+    width: 50%;
+}
+
+.input-message {
+    width: 100%;
 }
