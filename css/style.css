@@ -655,6 +655,7 @@ body {
 
 .contact {
     margin-top: 70px;
+    margin-bottom: 200px;
 }
 .contact__inner {
     text-align: center;
@@ -662,7 +663,7 @@ body {
 
 .contact__title {
     text-align: center;
-    color:#4b4b4b
+    color:#4b4b4b;
 }
 
 .contact__info {
@@ -672,7 +673,7 @@ body {
 }
 
 .contact__item {
-    margin-top: 25px;
+    margin-top: 38px;
     font-size: 16px;
 
 }
@@ -681,10 +682,15 @@ body {
     color: #333;
     display: block;
     font-size: 16px;
-    line-height: 36px;
+    line-height: 45px;
     text-transform: lowercase;
     padding-left: 25px;
+    text-decoration: underline;
     position: relative;
+}
+
+.phone {
+    margin-top: 0;
 }
 
 .phone a::before,
@@ -694,6 +700,7 @@ body {
     font-family: "icomoon";
     position: absolute;
     left: 0;
+    color: #c99037;
 }
 
 .phone a::before {
@@ -717,15 +724,140 @@ body {
 }
 
 .contact__input {
-    width: 100%;
+    margin-top: 30px;
 }
 
-.input-name,
-.input-email {
-    display: inline-block;
+.contact__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__input-wrapper input {
+    padding: 0 15px;
+}
+
+.input-name {
     width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+    position: relative;
+
+}
+
+.input-email {
+    margin-left: 10px;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
 }
 
 .input-message {
     width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    resize: none;
+    outline: none;
 }
+
+.contact-message {
+    margin-top: 20px;
+    padding: 20px 30px 20px 60px;
+    border: 1px solid #ffb400;
+    cursor: pointer;
+    background-color: transparent;  
+    color: #4b4b4b;
+    text-transform: uppercase;
+    border-radius: 34px;
+    transition: .3s all;
+    font-weight: 600;
+    position: relative;
+}
+
+.input-name::placeholder, 
+.input-email::placeholder,
+.input-message::placeholder {
+    text-transform: uppercase;
+}
+
+.contact-message::before {
+    content: "\f1d8";
+    font-family: "icomoon";
+    position: absolute;
+    left: 30px;
+}
+
+.contact-message:hover {
+    background-color: #ffb400;
+    color: #fff;
+}
+
+.footer {
+    height: 100px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left-wrapper {
+
+}
+
+.footer__name span {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #c99037;
+}
+
+.footer__date {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+
+.footer__right-wrapper{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c99037;
+    border-radius: 10px;
+    position: relative;
+    transition: all .3s;
+}
+
+.footer__right-wrapper:hover {
+    background-color: #c99037;
+
+}
+
+.box {
+    /* position: relative; */
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transform: translate(-10px, -10px);
+}
+
+.box__left-line {
+    width: 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.box__right-line {
+    width: 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    transform: rotate(220deg) translate(-50%, -50%);
+}
+

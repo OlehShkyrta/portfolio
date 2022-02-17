@@ -281,9 +281,11 @@
                     <div class="contact__form">
                         <div class="contact__descr">If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</div>
                         <div class="contact__input">
-                            <input class="input-name" type="text" placeholder="Your name">
-                            <input class="input-email" type="text" placeholder="Your email">
-                            <input class="input-message" type="text" placeholder="Your message">
+                            <div class="contact__input-wrapper">
+                                <input class="input-name" type="text" placeholder="Your name">
+                                <input class="input-email" type="text" placeholder="Your email">
+                            </div>
+                            <textarea class="input-message" placeholder="Your message"></textarea>
                         </div>
                         <button class="contact-message">Send message</button>
                     </div>
@@ -291,6 +293,22 @@
             </div>
         </div>
     </section>
+    <footer class="footer" style="background-image: url(images/header-bg.jpg)">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left-wrapper">
+                    <div class="footer__name">Developed by <span>Oleh Shkyrta</span></div>
+                    <div class="footer__date">February 2022</div>
+                </div>
+                <a class="footer__right-wrapper" href="#">
+                    <div class="box" href="">
+                        <div class="box__left-line"></div>
+                        <div class="box__right-line"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
