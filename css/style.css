@@ -85,10 +85,13 @@ body {
     fill: #ffb400;
 }
 
+.menu__btn {
+    display: none;
+}
+
 .header__menu-list {
     display: flex;
     align-items: center;
-
 }
 
 .header__menu-item {
@@ -124,6 +127,56 @@ body {
 .header__menu-link:focus::after {
     width: 100%;
 }
+
+/* .mobile__menu {
+    position: absolute;
+    left: -100%;
+    left: 0;
+    top: 0;
+    z-index: 7;
+} */
+
+/* .mobile__menu {
+    background: url("../images/header-bg.jpg");
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: all .5s;
+    z-index: 5;
+}
+
+.mobile__menu--active {
+    left: 0;
+}
+
+.menu__btn--close {
+    position: absolute;
+    left: -100%;
+    right: 15px;
+    top: 31px;
+    cursor: pointer;
+}
+
+.menu__btn--close::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: -100%;
+    transform-origin: left;
+} */
+/* 
+.close-btn::before, .close-btn::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transform-origin: left;
+} */
 
 .header__content {
     margin-top: 150px;
@@ -397,10 +450,12 @@ body {
     margin: 20px 0;
 }
 
-.about__cv-btn  button{
+.about__cv-btn  a{
+    display: inline-block;
     padding: 20px 30px 20px 60px;
     border: 1px solid #ffb400;
     background-color: #fff;
+    color:#333;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 34px;
@@ -410,17 +465,17 @@ body {
     top: 30px;
 }
 
-.about__cv-btn  button:hover {
+.about__cv-btn  a:hover {
     background-color: #ffb400;
     color: #fff;
 }
 
-.about__cv-btn  button::before {
+.about__cv-btn  a::before {
     content: "\f019";
     font-family: 'icomoon';
     position: absolute;
     left: 25px;
-    top: 15px;
+    top: 19px;
     font-size: 24px;
 }
 
