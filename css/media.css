@@ -1,0 +1,63 @@
+@media (max-width: 1130px) {
+    .header__content-photo img {
+        width: 300px;
+    }
+    .header__content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__content-inner {
+        width: 100%;
+        text-align: center;
+    }
+    .header__descr {
+        max-width: 100%;
+        padding: 0 70px;
+
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .header__presentation {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .header__btn-about {
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 980px) {
+    .header__content {
+        margin-top: 90px;
+    }
+    /* .header__content-wrapper {
+        flex-wrap: wrap;
+    } */
+    .header__content-photo {
+        margin: 0 auto;
+    }
+    .header__content-inner {
+        margin-top: 30px;
+        text-align: justify;
+    }
+    .header__welcome,
+    .header__presentation  {
+        text-align: center;
+    }
+    .header__descr {
+        padding: 0 30px;
+        max-width: 100%;
+    }
+    .header__btns {
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 860px) {
+
+}

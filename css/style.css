@@ -126,18 +126,23 @@ body {
 }
 
 .header__content {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .header__content-wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
+
 .header__content-photo img {
-    max-width: 350px;
-    border-radius: 50px;
-    border: 5px solid #ffb400;
+    max-width: 400px;
+    margin-top: -80px;
+}
+
+.header__content-inner {
+    margin-top: 50px;
 }
 
 .header__text {
@@ -155,6 +160,7 @@ body {
     font-size: 52px;
     font-weight: 600;
     line-height: 72px;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
@@ -171,7 +177,7 @@ body {
 }
 
 .header__btns {
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 
@@ -218,7 +224,7 @@ body {
 }
 
 .header__scroll {
-    margin-top: 180px;
+    margin-top: 120px;
     position: relative;
 }
 
