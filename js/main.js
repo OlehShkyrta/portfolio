@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Sticky heaxder
     $('.header__menu-link').click(function(e) {
-        var linkHref = $(this).attr('href');
+        let linkHref = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(linkHref).offset().top - 100
         }, 1000);
@@ -12,8 +12,9 @@ $(document).ready(function() {
 
 
 // Scroll animation
+ScrollReveal().reveal('.header__content', {duration: 1000, distance: '150px'});
 ScrollReveal().reveal('.about__inner', {duration: 2000, distance: '150px'});
-ScrollReveal().reveal('.contact', {duration: 1000, distance: '200px'});
+ScrollReveal().reveal('.contact__inner', {duration: 2000, distance: '150px'});
 
 
 //Highlighting the desired menu item when scrolling
