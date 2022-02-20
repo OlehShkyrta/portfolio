@@ -15,7 +15,27 @@
         padding: 0 70px;
     }
     .about__info-inner {
-        flex-direction: column;
+        margin-top: 56px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__info {
+        margin-top: 40px;
+        /* margin-left: 0; */
+    }
+    .about__cv-btn {
+        text-align: center;
+    }
+    .about__info-more {
+        justify-content: center;
+    }
+    .about__skills-wrapper {
+        flex-direction: column; 
+        align-items:center !important;
+        justify-content: center;
+    }
+    .about__skills-item + .about__skills-item {
+        margin-left: 0;
     }
 
 }
@@ -29,14 +49,14 @@
     .header__btn-about {
         margin-right: 24px;
     }
-    .about__info-inner {
-
+    .about__info {
+        margin-left: 100px;
     }
 }
 
 @media (max-width: 980px) {
     .header__content {
-        margin-top: 90px;
+        /* margin-top: 90px; */
     }
     .header__content-photo {
         margin: 0 auto;
@@ -58,11 +78,60 @@
         display: flex;
         justify-content: center;
     }
+    .about__info {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 860px) {
     .header__social {
         display: none;
+    }
+    .about__info-more {
+        padding-left: 0;
+    }
+    .contact__input-wrapper {
+        flex-direction: column;
+
+    }
+    .input-name {
+        width: 100%;
+    }
+    .input-email {
+        margin-top: 30px;
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+    }
+    .contact__form {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 620px) {
+    .about__info-wrapper {
+        flex-direction: column;
+    }
+    .second-column {
+        margin-left: 0;
+    }
+    .about__info-more {
+        flex-direction: column;
+    }
+    .about__education {
+        margin-left: 0;
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+    .contact__info {
+        flex-direction: column;
+    }
+    .contact__social {
+        display: inline-block;
+    }
+    .contact__form {
+        margin-top: 45px;
+        margin-left: 0;
     }
 }
 
@@ -88,5 +157,30 @@
     }
     .header__btn-portfolio {
         margin-top: 25px;
+    }
+    .about__photo img {
+        width: 340px;
+    }
+    .about__photo .border {
+        width: 345px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 430px) {
+    .about__title, 
+    .contact__title {
+        font-size: 54px;
+    }
+    .about__quote, 
+    .contact__quote {
+        font-size: 16px;
+    }
+    .about__photo img {
+        width: 300px;
+    }
+    .about__photo .border {
+        width: 300px;
+        height: 263px;
     }
 }
